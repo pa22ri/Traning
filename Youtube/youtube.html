@@ -1,73 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Clone</title>
     <link rel="stylesheet" href="youtube.css">
-
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav>
-        <div class="logo">
-            <i class="fa-brands fa-youtube"></i>
-            <span>YouTube</span>
+    <div class="navbar">
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+            <span class="logo">YouTube</span>
         </div>
 
-        <div class="search-box">
+        <div class="search">
             <input type="text" placeholder="Search">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
 
-        <div class="icons">
-            <i class="fa-solid fa-video"></i>
+        <div class="profile">
             <i class="fa-solid fa-bell"></i>
-            <i class="fa-solid fa-user"></i>
+            <div class="circle">P</div>
         </div>
-    </nav>
+    </div>
 
-    <!-- Trailer Section -->
-    <section class="trailer">
-        <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Trailer"
-            allowfullscreen>
-        </iframe>
-    </section>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div>🏠 Home</div>
+        <div>🎬 Shorts</div>
+        <div>📺 Subscriptions</div>
+        <div>🕒 History</div>
+        <div>👍 Liked Videos</div>
+    </div>
 
-    <!-- Video Grid -->
-    <section class="videos">
+    <!-- Main Content -->
+    <div class="content">
 
-        <div class="card">
-            <img src="https://via.placeholder.com/300x170" alt="">
-            <h3>Video Title 1</h3>
+        <div class="category">All</div>
+        <div class="category">Music</div>
+        <div class="category">Movies</div>
+        <div class="category">Live</div>
+
+        <br><br>
+
+        <div class="video-card">
+                <iframe
+                    width="320"
+                    height="180"
+                    src="https://www.youtube.com/embed/BsDoLVMnmZs"
+                    allowfullscreen>
+                </iframe>
+                <h3>Video Title</h3>
+                <p>Channel Name</p>
+        </div>        
+        <div class="video-card">
+            <iframe
+                width="320"
+                height="180"
+                src="https://www.youtube.com/embed/ZxKM3DCV2kE"
+                allowfullscreen>
+                </iframe>
+
+            <h3>Video Title</h3>
             <p>Channel Name</p>
         </div>
 
-        <div class="card">
-            <img src="https://via.placeholder.com/300x170" alt="">
-            <h3>Video Title 2</h3>
+        <div class="video-card">
+            <iframe
+                width="320"
+                height="180"
+                src="https://www.youtube.com/embed/RjIDj3XdlJo"
+                allowfullscreen>
+                </iframe>
+
+            <h3>Video Title</h3>
             <p>Channel Name</p>
         </div>
 
-        <div class="card">
-            <img src="https://via.placeholder.com/300x170" alt="">
-            <h3>Video Title 3</h3>
-            <p>Channel Name</p>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/300x170" alt="">
-            <h3>Video Title 4</h3>
-            <p>Channel Name</p>
-        </div>
-
-    </section>
+    </div>
 
 </body>
 </html>
