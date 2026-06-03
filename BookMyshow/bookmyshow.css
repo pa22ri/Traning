@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto","Outfit";
+    background-color: rgb(246,246,246);
+}
+
+/* ***NavBar*** */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: white;
+}
+.left-nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.right-nav ul{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    align-items: center;
+}
+.right-nav button {
+    background-color: crimson;
+    padding: 3px 10px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+}
+/* ***Search*** */
+.search {
+    border: 1px solid #7a7a7a;
+    border-radius: 5px;
+    padding: 4px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.search input{
+    outline: none;
+    border: none;
+    width: 500px;
+}
+#my img{
+    position: relative;
+    top: 3.5px;
+}
+.search input::placeholder {
+    color: #7a7a7a;
+}
+
+/* ***nav*** */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    font-size: small;
+    color: #524b4b;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.bottomleft{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+.bottomright{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+hr{
+    opacity: 0.3;
+}
+/* ***movies*** */
+.main{
+    padding: 20px 30px;
+}
+.top img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+p{
+    position: relative;
+    right: 2%;
+    color: lightcoral;
+}
+h2{
+    position: relative;
+    left: 4%;
+}
+
+/* ***Images*** */
+.subcard{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imges{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 350px;
+}
+.imges img{
+    border-radius: 13px;
+}
