@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+ <div class="app-shell">
+
+    <!-- ===================== SIDEBAR ===================== -->
+    <aside class="sidebar">
+
+      <div class="sidebar-brand">
+        <span class="brand-logo">A</span>
+        <span class="brand-name">adminty</span>
+        <span class="brand-toggle"></span>
+      </div>
+
+      <div class="sidebar-scroll">
+
+        <div class="nav-section-label">Navigation</div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <i class="fa-solid fa-grip nav-icon"></i>
+            <span class="nav-label">Dashboard</span>
+          </li>
+          <li class="nav-item">
+            <i class="fa-regular fa-circle nav-icon"></i>
+            <span class="nav-label">Default</span>
+          </li>
+          <li class="nav-item">
+            <i class="fa-regular fa-circle nav-icon"></i>
+            <span class="nav-label">CRM</span>
+          </li>
+          <li class="nav-item active">
+            <i class="fa-solid fa-chart-line nav-icon"></i>
+            <span class="nav-label">Analytics</span>
+            <span class="nav-tag new">NEW</span>
+          </li>
+          <li class="nav-item">
+            <i class="fa-regular fa-square nav-icon"></i>
+            <span class="nav-label">Page layouts</span>
+            <span class="nav-tag new">NEW</span>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-compass nav-icon"></i>
+            <span class="nav-label">Navigation</span>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-table-cells nav-icon"></i>
+            <span class="nav-label">Widget</span>
+            <span class="nav-tag count">100+</span>
+          </li>
+        </ul>
+
+        <div class="nav-section-label">UI Element</div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <i class="fa-solid fa-cubes nav-icon"></i>
+            <span class="nav-label">Basic Components</span>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-layer-group nav-icon"></i>
+            <span class="nav-label">Advance Components</span>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-puzzle-piece nav-icon"></i>
+            <span class="nav-label">Extra Components</span>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-film nav-icon"></i>
+            <span class="nav-label">Animations</span>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-note-sticky nav-icon"></i>
+            <span class="nav-label">Sticky Notes</span>
+            <span class="nav-tag hot">HOT</span>
+          </li>
+          <li class="nav-item">
+            <i class="fa-regular fa-image nav-icon"></i>
+            <span class="nav-label">Icons</span>
+          </li>
+        </ul>
+
+        <div class="nav-section-label">Forms</div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <i class="fa-solid fa-rectangle-list nav-icon"></i>
+            <span class="nav-label">Form Components</span>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-list-check nav-icon"></i>
+            <span class="nav-label">Form Picker</span>
+            <span class="nav-tag new">NEW</span>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-square-caret-down nav-icon"></i>
+            <span class="nav-label">Form Select</span>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-mask nav-icon"></i>
+            <span class="nav-label">Form Masking</span>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-wand-magic-sparkles nav-icon"></i>
+            <span class="nav-label">Form Wizard</span>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-check-double nav-icon"></i>
+            <span class="nav-label">Ready To Use</span>
+            <span class="nav-tag hot">HOT</span>
+          </li>
+        </ul>
+
+        <div class="nav-section-label">Tables</div>
+
+      </div>
+    </aside>
+
+    <!-- ===================== MAIN COLUMN ===================== -->
+    <div class="main-column">
+
+      <!-- TOP BAR -->
+      <header class="topbar">
+        <div class="topbar-left">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-arrows-up-down-left-right"></i>
+        </div>
+        <div class="topbar-right">
+          <div class="topbar-icon-btn">
+            <i class="fa-regular fa-bell"></i>
+            <span class="icon-badge">8</span>
+          </div>
+          <div class="topbar-icon-btn">
+            <i class="fa-regular fa-envelope"></i>
+            <span class="icon-badge blue">9</span>
+          </div>
+          <div class="topbar-user">
+            <span class="user-avatar"><i class="fa-solid fa-user"></i></span>
+            <span class="user-name">John Doe</span>
+            <i class="fa-solid fa-chevron-down" style="font-size:11px;color:var(--text-muted);"></i>
+          </div>
+        </div>
+      </header>
+
+      <!-- PAGE CONTENT -->
+      <main class="page-content">
+
+        <!-- STAT CARDS -->
+        <section class="stat-cards">
+
+          <div class="stat-card orange">
+            <div class="stat-card-top">
+              <div>
+                <div class="stat-card-value">$30200</div>
+                <div class="stat-card-label">All Earnings</div>
+              </div>
+              <i class="fa-solid fa-chart-simple stat-card-icon"></i>
+            </div>
+            <div class="stat-card-footer">
+              <span>% change</span>
+              <i class="fa-solid fa-arrow-trend-up"></i>
+            </div>
+          </div>
+
+          <div class="stat-card green">
+            <div class="stat-card-top">
+              <div>
+                <div class="stat-card-value">290+</div>
+                <div class="stat-card-label">Page Views</div>
+              </div>
+              <i class="fa-regular fa-file-lines stat-card-icon"></i>
+            </div>
+            <div class="stat-card-footer">
+              <span>% change</span>
+              <i class="fa-solid fa-arrow-trend-up"></i>
+            </div>
+          </div>
+
+          <div class="stat-card red">
+            <div class="stat-card-top">
+              <div>
+                <div class="stat-card-value">145</div>
+                <div class="stat-card-label">Task Completed</div>
+              </div>
+              <i class="fa-regular fa-calendar stat-card-icon"></i>
+            </div>
+            <div class="stat-card-footer">
+              <span>% change</span>
+              <i class="fa-solid fa-arrow-trend-up"></i>
+            </div>
+          </div>
+
+          <div class="stat-card blue">
+            <div class="stat-card-top">
+              <div>
+                <div class="stat-card-value">500</div>
+                <div class="stat-card-label">Downloads</div>
+              </div>
+              <i class="fa-solid fa-download stat-card-icon"></i>
+            </div>
+            <div class="stat-card-footer">
+              <span>% change</span>
+              <i class="fa-solid fa-arrow-trend-up"></i>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- MIDDLE ROW -->
+        <section class="middle-row">
+
+          <!-- Visitors chart -->
+          <div class="panel">
+            <div class="panel-header">
+              <div>
+                <div class="panel-title">Visitors</div>
+                <div class="panel-subtitle">For more details about usage, please refer amCharts licences.</div>
+              </div>
+              <div class="panel-header-icons">
+                <i class="fa-solid fa-expand"></i>
+                <i class="fa-solid fa-minus"></i>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+
+            <div class="chart-legend">
+              <span class="legend-item"><span class="legend-dot bar-old"></span>old Visitor</span>
+              <span class="legend-item"><span class="legend-dot bar-new"></span>New visitor</span>
+              <span class="legend-item"><span class="legend-line last-month"></span>Last Month Visitor</span>
+              <span class="legend-item"><span class="legend-line average"></span>Average Visitor</span>
+            </div>
+
+            <div class="chart-body">
+              <div class="bar-chart">
+                <div class="bar-group"><div class="bar old" style="height:55%;"></div><div class="bar new" style="height:70%;"></div></div>
+                <div class="bar-group"><div class="bar old" style="height:80%;"></div><div class="bar new" style="height:60%;"></div></div>
+                <div class="bar-group"><div class="bar old" style="height:45%;"></div><div class="bar new" style="height:65%;"></div></div>
+                <div class="bar-group"><div class="bar old" style="height:70%;"></div><div class="bar new" style="height:50%;"></div></div>
+                <div class="bar-group"><div class="bar old" style="height:60%;"></div><div class="bar new" style="height:85%;"></div></div>
+                <div class="bar-group"><div class="bar old" style="height:90%;"></div><div class="bar new" style="height:55%;"></div></div>
+                <div class="bar-group"><div class="bar old" style="height:50%;"></div><div class="bar new" style="height:75%;"></div></div>
+                <div class="bar-group"><div class="bar old" style="height:65%;"></div><div class="bar new" style="height:45%;"></div></div>
+                <div class="bar-group"><div class="bar old" style="height:75%;"></div><div class="bar new" style="height:60%;"></div></div>
+                <div class="bar-group"><div class="bar old" style="height:55%;"></div><div class="bar new" style="height:80%;"></div></div>
+              </div>
+              <div class="chart-x-labels">
+                <span>Jan 16</span>
+                <span>Jan 19</span>
+                <span>Jan 22</span>
+                <span>Jan 25</span>
+                <span>Jan 28</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Green accent panel -->
+          <div class="panel panel-accent">
+            <div class="panel-accent-header">
+              <span class="gear-btn"><i class="fa-solid fa-gear"></i></span>
+            </div>
+            <div class="mini-bar-chart">
+              <div class="mini-bar-col"><div class="mini-bar" style="height:55%;"></div><span class="mini-bar-label">UI</span></div>
+              <div class="mini-bar-col"><div class="mini-bar" style="height:70%;"></div><span class="mini-bar-label">UX</span></div>
+              <div class="mini-bar-col"><div class="mini-bar" style="height:95%;"></div><span class="mini-bar-label">Web</span></div>
+              <div class="mini-bar-col"><div class="mini-bar" style="height:80%;"></div><span class="mini-bar-label">App</span></div>
+              <div class="mini-bar-col"><div class="mini-bar" style="height:60%;"></div><span class="mini-bar-label">SEO</span></div>
+            </div>
+            <div class="panel-accent-caption">Total completed project and earning</div>
+            <div class="panel-accent-stats">
+              <div class="panel-accent-stat">
+                <div class="stat-num">175</div>
+                <div class="stat-label">Completed Projects</div>
+              </div>
+              <div class="panel-accent-stat">
+                <div class="stat-num">76.6M</div>
+                <div class="stat-label">Total Earnings</div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- BOTTOM ROW -->
+        <section class="bottom-row">
+
+          <!-- Sales table -->
+          <div class="panel">
+            <div class="panel-header">
+              <div class="panel-title">Global Sales by Top Locations</div>
+            </div>
+            <table class="sales-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Country</th>
+                  <th>Sales</th>
+                  <th>Average</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td class="country-cell">
+                    <span class="flag-swatch" style="background-color:#000;"></span>
+                    Germany
+                  </td>
+                  <td>3,562</td>
+                  <td>56.23%</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td class="country-cell">
+                    <span class="flag-swatch" style="background-color:#3c3b6e;"></span>
+                    USA
+                  </td>
+                  <td>2,650</td>
+                  <td>25.23%</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td class="country-cell">
+                    <span class="flag-swatch" style="background-color:#00247d;"></span>
+                    Australia
+                  </td>
+                  <td>956</td>
+                  <td>12.45%</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td class="country-cell">
+                    <span class="flag-swatch" style="background-color:#012169;"></span>
+                    United Kingdom
+                  </td>
+                  <td>689</td>
+                  <td>8.65%</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td class="country-cell">
+                    <span class="flag-swatch" style="background-color:#009739;"></span>
+                    Brazil
+                  </td>
+                  <td>560</td>
+                  <td>3.56%</td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#" class="view-all-link">View all Sales Locations</a>
+          </div>
+
+          <!-- New Users donut -->
+          <div class="panel">
+            <div class="panel-header">
+              <div class="panel-title">New Users</div>
+            </div>
+            <div class="donut-wrap">
+              <svg viewBox="0 0 42 42" class="donut-chart">
+                <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#20c2a6" stroke-width="6"
+                  stroke-dasharray="60 40" stroke-dashoffset="25"></circle>
+                <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#fd9a52" stroke-width="6"
+                  stroke-dasharray="25 75" stroke-dashoffset="-35"></circle>
+                <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#f7567c" stroke-width="6"
+                  stroke-dasharray="9 91" stroke-dashoffset="-60"></circle>
+              </svg>
+            </div>
+            <div class="donut-legend">
+              <span class="legend-item"><span class="legend-dot" style="background-color:#fd9a52;"></span>Satisfied</span>
+              <span class="legend-item"><span class="legend-dot" style="background-color:#20c2a6;"></span>Unsatisfied</span>
+              <span class="legend-item"><span class="legend-dot" style="background-color:#f7567c;"></span>NA</span>
+            </div>
+            <div class="donut-stats">
+              <div class="donut-stat">
+                <div class="stat-pct">85%</div>
+                <div class="stat-tag">Satisfied</div>
+              </div>
+              <div class="donut-stat">
+                <div class="stat-pct">6%</div>
+                <div class="stat-tag">Unsatisfied</div>
+              </div>
+              <div class="donut-stat">
+                <div class="stat-pct">9%</div>
+                <div class="stat-tag">NA</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side mini cards -->
+          <div class="side-cards">
+            <div class="mini-card">
+              <i class="fa-regular fa-envelope mini-card-icon mail"></i>
+              <div class="mini-card-title"><span class="count-highlight">8.62k</span> Subscribers</div>
+              <div class="mini-card-sub">Your main list is growing</div>
+              <a href="#" class="mini-card-btn">Manage List</a>
+            </div>
+            <div class="mini-card">
+              <i class="fa-brands fa-twitter mini-card-icon bird"></i>
+              <div class="mini-card-title">+40 Followers</div>
+              <div class="mini-card-sub">Your main list is growing</div>
+              <a href="#" class="mini-card-btn">Check Them Out</a>
+            </div>
+          </div>
+
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>
