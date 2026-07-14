@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile-Card</title>
+    <style>
+        body{
+            margin:0;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#ff9a9e,#a18cd1);
+            font-family:'Segoe UI',sans-serif;
+        }
+        .main{
+            width:350px;
+            padding:25px;
+            text-align:center;
+            background:rgba(255,255,255,0.2);
+            backdrop-filter:blur(12px);
+            border-radius:20px;
+            border:1px solid rgba(255,255,255,0.3);
+            box-shadow:0 10px 30px rgba(0,0,0,0.2);
+            transition:0.4s;
+        }
+        .main:hover{
+            transform:translateY(-10px);
+            box-shadow:0 15px 35px rgba(0,0,0,0.3);
+        }
+        .head{
+            font-size:32px;
+            font-weight:bold;
+            color:#222;
+            margin-bottom:15px;
+        }
+        .image{
+            width:150px;
+            height:150px;
+            border-radius:50%;
+            border:5px solid white;
+            object-fit:cover;
+            box-shadow:0 5px 20px rgba(0,0,0,0.3);
+        }
+        .name{
+            margin-top:15px;
+            font-size:28px;
+            font-weight:bold;
+            color:#222;
+        }
+        .title{
+            margin-top:8px;
+            font-size:18px;
+            color:#555;
+            letter-spacing:1px;
+        }
+        button{
+            margin-top:20px;
+            padding:12px 30px;
+            border:none;
+            border-radius:30px;
+            background:linear-gradient(45deg,#ff6b6b,#ff8e53);
+            color:white;
+            font-size:18px;
+            font-weight:bold;
+            cursor:pointer;
+            transition:0.3s;
+            box-shadow:0 5px 15px rgba(255,107,107,0.4);
+        }
+        button:hover{
+            transform:scale(1.08);
+            box-shadow:0 8px 20px rgba(255,107,107,0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="head"><b>Profile</b></div>
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTdw0KcUKyR9rv-eGVm8qyRNkwIqzvtOlZyQ&s" alt="" class="image"></div>
+        <div class="name"><b>Pari Shah</b></div>
+        <div class="title">MERN Development</div>
+        <button>Follow</button>
+    </div>
+</body>
+</html>
